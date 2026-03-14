@@ -321,6 +321,47 @@ nav {
 }
 
 /* Speakers Section Styles */
+.speakers {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  flex-direction: row;
+}
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  flex-basis: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background: var(--dark);
+  border-color: var(--primary);
+  transform: translateY(-5px);
+}
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+.card p {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
 
 @media screen and (max-width: 478px) {
   .nav-links {
