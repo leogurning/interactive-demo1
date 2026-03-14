@@ -371,6 +371,14 @@ nav {
 
 /* Register Section Styles */
 
+#register {
+  padding: 5rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
 input, textarea {
                 width: 80%;
                 padding: 8px;
