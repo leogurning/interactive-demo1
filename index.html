@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain AI Conference</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="#home" class="logo">
+          <img class="logo-icon" src="./images/event-image.jpg" alt="" />
+          <span class="logo-text">A-TECH</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+        <div class="mobile-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <!-- Mobile Navigation Menu -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#speakers" onclick="closeMenu()">Speakers</a>
+        <a href="#register" onclick="closeMenu()">Register</a>
+      </div>
+    </header>
+    <div class="container">
+      <aside>
+        <nav class="desktop-nav">
+          <ul>
+            <li>Section 1</li>
+            <li>Section 2</li>
+            <li>Section 3</li>
+            <li>Section 4</li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+          <div class="hero-content">
+            <h1>The Ch-AI-n</h1>
+            <p>Where Intelligence Meets Integrity. Join the summit !</p>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">100</span>
+                <span class="stat-label">Attendees</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Speakers</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Days</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">25</span>
+                <span class="stat-label">Sponsors</span>
+              </div>
+            </div>
+
+            <figure class="event-image">
+              <img
+                src="./images/event-image.jpg"
+                alt="profile-image"
+                width="200"
+              />
+            </figure>
+
+            <div class="cta-buttons">
+              <a href="#about" class="btn">Learn More</a>
+              <a href="#speakers" class="btn">View Speakers</a>
+            </div>
+          </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="about">
+          <h2>About Chain Summit</h2>
+
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Experience the synergy of the century at the AI & Blockchain
+                Innovation Summit. While AI provides the "brain" for autonomous
+                decision-making, Blockchain offers the "backbone" of
+                decentralized trust.
+              </p>
+
+              <p>
+                This convergence is a catalyst for the global economy, promising
+                to revolutionize industrial efficiency and provide clear,
+                transparent frameworks for government regulation. By attending,
+                you gain exclusive access to the pioneers merging these two
+                worlds.
+              </p>
+
+              <p>
+                Don't just witness the future—code it. Secure your spot today.
+              </p>
+            </div>
+
+            <figure>
+              <img
+                src="./images/event-image.jpg"
+                alt="event-image"
+                width="500"
+              />
+              <figcaption>How about AI meets Blockchain</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers">
+          <h2>Speakers</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="speaker-avatar">DR</div>
+              <h3 class="speaker-name">Dr. Sarah Chen</h3>
+              <div class="speaker-title">Chief AI Officer, TechCorp</div>
+              <p class="speaker-bio">
+                Leading researcher in deep learning and neural networks. Author
+                of 40+ AI research papers.
+              </p>
+            </article>
+            <article class="card">
+              <div class="speaker-avatar">MJ</div>
+              <h3 class="speaker-name">Marcus Johnson</h3>
+              <div class="speaker-title">Blockchain Architect, CryptoLabs</div>
+              <p class="speaker-bio">
+                Pioneer in decentralized systems and smart contract development
+                for Fortune 500 companies.
+              </p>
+            </article>
+            <article class="card">
+              <div class="speaker-avatar">LP</div>
+              <h3 class="speaker-name">Dr. Lisa Park</h3>
+              <div class="speaker-title">ML Research Director, DataMind</div>
+              <p class="speaker-bio">
+                Expert in machine learning algorithms and AI ethics. Former lead
+                scientist at major tech companies.
+              </p>
+            </article>
+            <article class="card">
+              <div class="speaker-avatar">AR</div>
+              <h3 class="speaker-name">Alex Rodriguez</h3>
+              <div class="speaker-title">Founder, Neural Networks Inc</div>
+              <p class="speaker-bio">
+                Entrepreneur in AI-powered blockchain applications and scalable
+                ML infrastructure.
+              </p>
+            </article>
+            <article class="card">
+              <div class="speaker-avatar">JW</div>
+              <h3 class="speaker-name">Jennifer Wu</h3>
+              <div class="speaker-title">VP of Innovation, QuantumTech</div>
+              <p class="speaker-bio">
+                Specializes in quantum computing applications for AI and
+                cryptography solutions.
+              </p>
+            </article>
+            <article class="card">
+              <div class="speaker-avatar">DT</div>
+              <h3 class="speaker-name">Donald Trump</h3>
+              <div class="speaker-title">President, USA</div>
+              <p class="speaker-bio">
+                Specializes in governments warlords and weapons for global war
+                solutions.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="register">
+          <h2>Send us Message</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer>&copy 2026 by Group</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
